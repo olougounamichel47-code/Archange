@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORMULAIRE MODERNE</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    padding:40px;
+}
+
+.cv{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(75,0,130,0.15);
+    animation:apparition 0.8s ease;
+}
+
+@keyframes apparition{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+h1{
+    text-align:center;
+    color:#4b0082;
+    font-size:2.5rem;
+    margin-bottom:30px;
+}
+
+h1::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:4px;
+    background:#4b0082;
+    margin:10px auto;
+    border-radius:20px;
+}
+
+p{
+    margin-bottom:20px;
+}
+
+label{
+    font-weight:bold;
+    color:#333;
+}
+
+strong{
+    color:#4b0082;
+}
+
+textarea,
+input[type="text"],
+select{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:2px solid #d8c8ff;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+select:focus{
+    border-color:#4b0082;
+    box-shadow:0 0 15px rgba(75,0,130,0.25);
+    outline:none;
+}
+
+fieldset{
+    border:2px solid #4b0082;
+    border-radius:20px;
+    padding:20px;
+    margin-top:25px;
+    background:rgba(75,0,130,0.03);
+}
+
+legend{
+    color:#4b0082;
+    font-weight:bold;
+    padding:0 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    accent-color:#4b0082;
+    transform:scale(1.1);
+    margin-right:6px;
+}
+
+.btns{
+    text-align:center;
+    margin-top:30px;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    background:linear-gradient(135deg,#4b0082,#6a0dad);
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:50px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+    margin:5px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(75,0,130,0.3);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cv">
+
+<h1>FORMULAIRE</h1>
+
+<form method="post" action="traitement.php">
+
+<p>
+<label for="ameliorer">
+Comment pensez-vous que je pourrais améliorer mon site ?
+</label><br>
+<textarea name="ameliorer" id="ameliorer" rows="6"></textarea>
+</p>
+
+<p>
+<strong>Cochez les aliments que vous aimez manger :</strong><br><br>
+
+<input type="checkbox" name="frites" id="frites">
+<label for="frites">Frites</label><br>
+
+<input type="checkbox" name="steak" id="steak">
+<label for="steak">Steak haché</label><br>
+
+<input type="checkbox" name="epinards" id="epinards">
+<label for="epinards">Épinards</label><br>
+
+<input type="checkbox" name="huitres" id="huitres">
+<label for="huitres">Huîtres</label>
+</p>
+
+<p>
+<strong>Votre tranche d'âge :</strong><br><br>
+
+<input type="radio" name="age" value="moins15" id="moins15">
+<label for="moins15">Moins de 15 ans</label><br>
+
+<input type="radio" name="age" value="15-25" id="15-25">
+<label for="15-25">15 - 25 ans</label><br>
+
+<input type="radio" name="age" value="25-40" id="25-40">
+<label for="25-40">25 - 40 ans</label><br>
+
+<input type="radio" name="age" value="plus40" id="plus40">
+<label for="plus40">Plus de 40 ans</label>
+</p>
+
+<p>
+<strong>Sur quel continent habitez-vous ?</strong><br><br>
+
+<input type="radio" name="continent" value="afrique" id="afrique">
+<label for="afrique">Afrique</label><br>
+
+<input type="radio" name="continent" value="europe" id="europe">
+<label for="europe">Europe</label><br>
+
+<input type="radio" name="continent" value="asie" id="asie">
+<label for="asie">Asie</label><br>
+
+<input type="radio" name="continent" value="amerique" id="amerique">
+<label for="amerique">Amérique</label><br>
+
+<input type="radio" name="continent" value="australie" id="australie">
+<label for="australie">Australie</label>
+</p>
+
+<p>
+<label for="pays"><strong>Dans quel pays habitez-vous ?</strong></label><br>
+
+<select name="pays" id="pays">
+
+<optgroup label="Europe">
+<option>France</option>
+<option>Espagne</option>
+<option>Italie</option>
+<option>Royaume-Uni</option>
+</optgroup>
+
+<optgroup label="Amérique">
+<option selected>Canada</option>
+<option>États-Unis</option>
+</optgroup>
+
+<optgroup label="Asie">
+<option>Chine</option>
+<option>Japon</option>
+</optgroup>
+
+<optgroup label="Afrique">
+<option>Bénin</option>
+<option>Côte d'Ivoire</option>
+<option>Sénégal</option>
+<option>Togo</option>
+</optgroup>
+
+</select>
+</p>
+
+<fieldset>
+
+<legend>Vos coordonnées</legend>
+
+<label for="nom">Nom</label><br>
+<input type="text" id="nom" name="nom"><br><br>
+
+<label for="prenom">Prénom</label><br>
+<input type="text" id="prenom" name="prenom"><br><br>
+
+<label for="email">E-mail</label><br>
+<input type="text" id="email" name="email">
+
+</fieldset>
+
+<fieldset>
+
+<legend>Votre souhait</legend>
+
+<p>
+
+<input type="radio" name="souhait" value="riche" id="riche">
+<label for="riche">Être riche</label><br>
+
+<input type="radio" name="souhait" value="celebre" id="celebre">
+<label for="celebre">Être célèbre</label><br>
+
+<input type="radio" name="souhait" value="intelligent" id="intelligent">
+<label for="intelligent">Être encore plus intelligent</label><br>
+
+<input type="radio" name="souhait" value="autre" id="autre">
+<label for="autre">Autre</label>
+
+</p>
+
+<p>
+<label for="precisions">Précisez votre souhait :</label><br>
+<textarea id="precisions" name="precisions" rows="4"></textarea>
+</p>
+
+</fieldset>
+
+<div class="btns">
+<input type="submit" value="Envoyer">
+<input type="reset" value="Réinitialiser">
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

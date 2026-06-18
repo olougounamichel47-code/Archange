@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Menu</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    /* 🌟 fond blanc premium */
+    background: radial-gradient(circle at top left, #ffffff, #f5f7fb);
+
+    min-height:100vh;
+    padding:25px;
+}
+
+/* TITRE */
+h6{
+    color:#111827;
+    font-size:26px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+/* LISTE */
+ul{
+    list-style:none;
+    padding:0;
+}
+
+/* LIENS */
+ul a{
+    text-decoration:none;
+}
+
+/* CARTES MENU */
+ul li{
+    position:relative;
+    margin-bottom:15px;
+    padding:16px 20px;
+
+    color:#1f2937;
+
+    border-radius:18px;
+
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(0,0,0,0.06);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+    transition:0.4s;
+}
+
+/* BARRE DORÉE */
+ul li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:5px;
+    height:100%;
+    background:#d4af37;
+    border-radius:20px;
+}
+
+/* HOVER */
+ul li:hover{
+    transform: translateX(10px) scale(1.03);
+
+    background: linear-gradient(135deg, #ffffff, #f1f5f9);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+/* ICONES */
+.bi{
+    margin-right:12px;
+    font-size:30px;
+}
+
+/* ANIMATION */
+li{
+    animation:fadeIn .8s ease forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    margin-top:25px;
+    color:rgba(0,0,0,.5);
+    font-size:12px;
+    letter-spacing:1px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h6>
+    <i class="bi bi-grid-fill"></i>
+    MENU PRINCIPAL
+</h6>
+
+<ul>
+    <a href="accueil.html" target="f3">
+        <li><i class="bi bi-house-door-fill"></i>Accueil</li>
+    </a>
+
+    <a href="tp1.html" target="f3">
+        <li><i class="bi bi-code-slash"></i>TP</li>
+    </a>
+
+    
+
+    
+
+    <a href="liste.html" target="f3">
+        <li><i class="bi bi-list-ul"></i>Liste</li>
+    </a>
+
+    <a href="tableau.html" target="f3">
+        <li><i class="bi bi-grid-3x3-gap-fill"></i>Tableau</li>
+    </a>
+
+    <a href="formulaire.html" target="f3">
+        <li><i class="bi bi-ui-checks-grid"></i>Formulaire</li>
+    </a>
+
+    <a href="cv.html" target="f3">
+        <li><i class="bi bi-file-earmark-person-fill"></i>Mon CV</li>
+    </a>
+</ul>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:#ffffff
+    color:#333;
+    padding:40px;
+    position: relative;
+    overflow-x:hidden;
+}
+
+/* Halo lumineux */
+body::before{
+    content:"";
+    position:fixed;
+    top:-150px;
+    left:-150px;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    background:#121b30;
+    filter:blur(180px);
+    opacity:0.12;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    right:-100px;
+    bottom:-100px;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    background:#1b093b;
+    filter:blur(160px);
+    opacity:0.30;
+}
+
+.container{
+    position:relative;
+    z-index:2;
+}
+
+/* PHOTO */
+.photo{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    object-fit:cover;
+    
+    box-shadow:0 0 10px rgba(18, 38, 61, 0.8);
+    display:block;
+    margin:auto;
+}
+
+/* TITRE */
+h1{
+    text-align:center;
+    margin-top:20px;
+    font-size:3rem;
+  
+}
+
+.nom{
+    color:#372b5a;
+}
+
+.sous-titre{
+    text-align:center;
+    margin-top:15px;
+    color:#4a5668;
+    font-size:1.1rem;
+}
+
+/* CARTES */
+.grille{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.carte{
+    background:rgba(39, 20, 73, 0.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(38, 24, 63, 0.1);
+    border-radius:20px;
+    padding:25px;
+    transition:0.4s;
+}
+
+.carte:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:0 0 25px rgba(16, 36, 68, 0.4);
+}
+
+.carte h2{
+    color:#1d1533;
+    margin-bottom:15px;
+}
+
+.carte p{
+    line-height:1.8;
+}
+
+.carte ul{
+    padding-left:20px;
+}
+
+.carte li{
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    margin-top:40px;
+    color:#cbd5e1;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="IMG_7688.JPG" class="photo" alt="Photo">
+
+<h1> <span class="nom">OLOUGOUNA Archange</span></h1>
+
+<p class="sous-titre">
+Étudiant en Informatique de Gestion | Passionné de Technologie,
+Football, Basketball et Jeux Vidéo
+</p>
+
+<div class="grille">
+
+<div class="carte">
+<h2>👤 À propos de moi</h2>
+<p>
+Je m'appelle <strong>Olougouna Adeyinka Michel Archange</strong>.
+Je suis né le 26 Mai 2008 à Abomey.
+Je suis actuellement étudiant en première année
+d'Informatique de Gestion à l'ENEAM.
+</p>
+</div>
+
+<div class="carte">
+<h2>🎯 Mes Qualités</h2>
+<ul>
+<li>Esprit d'équipe</li>
+<li>Détermination</li>
+<li>Créativité</li>
+<li>Leadership</li>
+<li>Sens des responsabilités</li>
+</ul>
+</div>
+
+<div class="carte">
+<h2>⚡ Mes Passions</h2>
+<ul>
+<li>Football</li>
+<li>Basketball</li>
+<li>Jeux vidéo (PlayStation)</li>
+<li>Technologie</li>
+<li>Développement Web</li>
+</ul>
+</div>
+
+<div class="carte">
+<h2>📚 Formation</h2>
+<p>
+Étudiant en Informatique de Gestion à l'ENEAM,
+avec un intérêt particulier pour le développement web,
+les bases de données et les nouvelles technologies.
+</p>
+</div>
+
+<div class="carte">
+<h2>📞 Contact</h2>
+<p>
+📧 olugunaMichel47@gmail.com<br><br>
+📱 +229 57 05 57 11<br><br>
+🎵 @arcange_pas_de_61x
+</p>
+</div>
+
+<div class="carte">
+<h2>🚀 Mon Objectif</h2>
+<p>
+Devenir un expert dans le domaine de l'informatique,
+concevoir des applications innovantes et contribuer
+à la transformation numérique en Afrique.
+</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 - Portfolio Personnel de Archange
+</footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil · Bienvenue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #faf8f6;
+      padding: 1.5rem;
+      /* doux dégradé subtil */
+      background: radial-gradient(circle at 80% 20%, #f3f0ff, #faf8f6 70%);
+    }
+
+    .welcome-card {
+      max-width: 720px;
+      width: 100%;
+      padding: 3.5rem 2.5rem;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 48px;
+      box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.08),
+                  0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+      text-align: center;
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .welcome-card:hover {
+      transform: scale(1.01);
+    }
+
+    /* Icône ou décoration */
+    .icon {
+      font-size: 3.2rem;
+      margin-bottom: 0.8rem;
+      display: inline-block;
+      background: linear-gradient(135deg, #7c3aed, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #1e1e1e;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #4b4b4b;
+      margin-bottom: 2.2rem;
+      line-height: 1.6;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .subtitle strong {
+      font-weight: 600;
+      color: #7c3aed;
+      background: rgba(124, 58, 237, 0.08);
+      padding: 0.1rem 0.8rem;
+      border-radius: 40px;
+      display: inline-block;
+    }
+
+    .menu-hint {
+      display: inline-block;
+      padding: 0.6rem 2rem;
+      border-radius: 60px;
+      background: #1e1e1e;
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      transition: background 0.3s, transform 0.2s;
+      border: none;
+      cursor: default;
+    }
+
+    .menu-hint i {
+      margin-right: 0.5rem;
+    }
+
+    .menu-hint:hover {
+      background: #7c3aed;
+      transform: translateY(-2px);
+    }
+
+    /* petit pied de page discret */
+    .footer-note {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: #a0a0a0;
+      letter-spacing: 0.2px;
+      border-top: 1px solid rgba(0,0,0,0.04);
+      padding-top: 1.5rem;
+    }
+
+    .footer-note a {
+      color: #7c3aed;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-note a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .welcome-card {
+        padding: 2.5rem 1.5rem;
+        border-radius: 32px;
+      }
+      h1 {
+        font-size: 2.4rem;
+      }
+      .subtitle {
+        font-size: 1.1rem;
+      }
+      .icon {
+        font-size: 2.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-card">
+    <!-- Décoration (emoji ou icône) -->
+    <div class="icon">✦</div>
+
+    <h1>Bonjour</h1>
+    <p class="subtitle">
+      Bienvenue sur notre site.<br />
+      Veuillez faire votre choix dans le menu.
+    </p>
+
+    
+
+   
+  </div>
+</body>
+</html>

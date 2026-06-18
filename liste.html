@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les listes HTML</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    padding:40px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(75,0,130,0.15);
+    animation:apparition 0.8s ease;
+}
+
+@keyframes apparition{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+h1{
+    text-align:center;
+    color:#4b0082;
+    font-size:2.5rem;
+    margin-bottom:35px;
+}
+
+h1::after{
+    content:"";
+    display:block;
+    width:140px;
+    height:4px;
+    background:#4b0082;
+    margin:12px auto;
+    border-radius:20px;
+}
+
+.section{
+    background:rgba(75,0,130,0.03);
+    border:2px solid rgba(75,0,130,0.15);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    transition:0.3s;
+}
+
+.section:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(75,0,130,0.15);
+}
+
+h2,h3,h4{
+    color:#4b0082;
+    margin-bottom:15px;
+    border-left:5px solid #4b0082;
+    padding-left:12px;
+}
+
+ul,ol{
+    margin-left:30px;
+}
+
+li{
+    margin:12px 0;
+    color:#333;
+    transition:0.3s;
+}
+
+li:hover{
+    color:#4b0082;
+    transform:translateX(5px);
+}
+
+dl{
+    margin-top:10px;
+}
+
+dt{
+    color:#4b0082;
+    font-size:18px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+dd{
+    margin-left:20px;
+    margin-top:5px;
+    color:#555;
+    padding:10px;
+    background:#f8f5ff;
+    border-radius:10px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Les différents types de listes en HTML</h1>
+
+<div class="section">
+    <h2>Liste non ordonnée</h2>
+
+    <ul>
+        <li>Lecture</li>
+        <li>Musique</li>
+        <li>Sport</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h3>Liste ordonnée</h3>
+
+    <ol>
+        <li>Créer un fichier HTML</li>
+        <li>Ajouter la structure de base</li>
+        <li>Insérer le contenu</li>
+        <li>Enregistrer et tester dans un navigateur</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h4>Liste de définition</h4>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Langage de structuration des pages Web.</dd>
+
+        <dt>CSS</dt>
+        <dd>Langage de mise en forme des pages Web.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Langage de programmation permettant d'ajouter de l'interactivité aux pages Web.</dd>
+    </dl>
+</div>
+
+</div>
+
+</body>
+</html>
