@@ -12,12 +12,12 @@
         <frame src="bienvenue.html" scrolling="no"/>
         <frame src="logoeneam.html" scrolling="no"/>
 
-    </frameset>>
+ </frameset>>
     <frameset cols="20%,80%">
         <frame src="lesmenus.html"/>
         <frame src="pagedouverture.html" name="f3"/>
 
-    </frameset>
+/frameset>
     <frame src="amaguise.html"/>
 
 </frameset>
