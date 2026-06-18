@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EXERCICE PERSONNEL</title>
+    <meta charset="utf-8">
+
+</head>
+
+<frameset rows="20%,75%,5%">
+    <frameset cols="20%,60%,20%>">
+        <frame src="logouac.html" scrolling="no">
+        <frame src="bienvenue.html" scrolling="no"/>
+        <frame src="logoeneam.html" scrolling="no"/>
+
+    </frameset>>
+    <frameset cols="20%,80%">
+        <frame src="lesmenus.html"/>
+        <frame src="pagedouverture.html" name="f3"/>
+
+    </frameset>
+    <frame src="amaguise.html"/>
+
+</frameset>
+
+</html>
